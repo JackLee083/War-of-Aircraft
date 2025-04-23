@@ -33,7 +33,7 @@ class Background(GameSprite):
     def __init__(self, is_alt):
 
         # call the parent methods, and set the bg route
-        super().__init__("./War-of-Aircraft/images/background.png")
+        super().__init__("./images/background.png")
     
         # check the image are alternate or not
         if is_alt:
@@ -52,7 +52,7 @@ class Enemy(GameSprite):
     """ Enemy sprite class """
     def __init__(self):
         # call the parent methods, and set the Enemy pic route
-        super().__init__("./War-of-Aircraft/images/enemy1.png")
+        super().__init__("./images/enemy1.png")
         # Set a ramdon number for the enemy speed
         self.speed = random.randint(1, 3)
         # Set the enemy position
@@ -71,7 +71,7 @@ class Hero(GameSprite):
     """ Hero class """
     def __init__(self):
         # call the parent methods, set the Hero pic route, and set the speed as 0
-        super().__init__("./War-of-Aircraft/images/me1.png", 0)
+        super().__init__("./images/me1.png", 0)
         # Set the hero position 
         self.rect.centerx = SCREEN_RECT.centerx 
         self.rect.bottom = SCREEN_RECT.bottom - 120
@@ -106,7 +106,7 @@ class Bullet1(GameSprite):
     """ Bullet class """
     def __init__(self):
         # call the parent methods, and set the Bullet pic route
-        super().__init__("./War-of-Aircraft/images/bullet2.png", -2)
+        super().__init__("./images/bullet2.png", -2)
 
     def update(self):
         # make sure bullet flying vertically 
@@ -119,7 +119,7 @@ class Bullet2(GameSprite):
     """ Bullet class """
     def __init__(self):
         # call the parent methods, and set the Bullet pic route
-        super().__init__("./War-of-Aircraft/images/bullet1.png", -2)
+        super().__init__("./images/bullet1.png", -2)
 
     def update(self):
         # make sure bullet flying vertically 
