@@ -247,7 +247,10 @@ class WarOfAircraftGame(object):
         self.enemy2_spawn_count = 0
         self.enemy3_spawn_count = 0
         self.game_state = "start"
-
+        self.hero_exploding = False
+        self.enemy3_exploding = False
+        pygame.time.set_timer(DELAY_START_EVENT, 155000)  # stop the previous timer
+        pygame.time.set_timer(DELAY_START_EVENT, 155000)  # reset the timer
 if __name__ == "__main__":
     # Create game object
     game = WarOfAircraftGame()
